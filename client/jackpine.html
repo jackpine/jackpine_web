@@ -3,11 +3,46 @@
 </head>
 
 <body>
-  {{> hello}}
+  {{> main}}
 </body>
 
-<template name="hello">
-  <h1>Hello World!</h1>
-  {{greeting}}
-  <input type="button" value="Click" />
+<template name="main">
+
+  <div class="full_page" id="hello">
+    <div class="nav-bar">
+      <a href="#our_trade">OUR TRADE</a>
+      <a href="#our_guild">THE GUILD</a>
+      <a href="#lets_chat">LET'S CHAT</a>
+    </div>
+    <div class="title">
+      <h2>Digital Craftsman</h2>
+      <h3>We specialize in new & reclaimed code.</h3>
+    </div>
+    <div class="footer">
+      SCROLL ONWARD
+      <i class="fa fa-arrow-down"></i>
+    </div>
+  </div>
+
+  <div class="full_page" id="our_trade">
+    <h1>OUR TRADE</h1>
+    <p>
+      Jackpine is a collective of skilled product designers and developers.
+      We work hand in hand with our clients to craft practical solutions for real problems.
+      We design, prototype, and ship beautiful software, time and again. Curious?
+      Get in touch. We'd love to hear what you're doing, and what we can do for you.
+    </p>
+  </div>
+
+  <div class="full_page" id="our_guild">
+    <h1>OUR GUILD</h1>
+    <p>
+      here goes those fabulous mug shots
+    </p>
+  </div>
+
+  <div class="full_page" id="lets_chat">
+    <h1>LET'S CHAT</h1>
+  </div>
+
 </template>
