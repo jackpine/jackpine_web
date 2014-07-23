@@ -1,0 +1,21 @@
+{
+  "meteor": {},
+  "dependencies": {
+    "basePackages": {
+      "font-awesome-4-less": {},
+      "normalize.css": {}
+    },
+    "packages": {
+      "font-awesome-4-less": {
+        "git": "https://github.com/svub/fontawesome4-less.git",
+        "tag": "v4.4.0",
+        "commit": "250d2336a217c18eb70e9d074784a7db3ca38472"
+      },
+      "normalize.css": {
+        "git": "https://github.com/rithis/meteor-normalize.css",
+        "tag": "v2.0.1",
+        "commit": "671aba13223dd7d7ec1d26a6b2461943d7c4fa18"
+      }
+    }
+  }
+}
