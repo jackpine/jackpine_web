@@ -1,10 +1,18 @@
 // Import Font Awesome
 @import "/packages/font-awesome-4-less/font-awesome.import.less";
+@import "/fonts/caviar-dreams-fontfacekit/caviardreams_regular_macroman/stylesheet.css";
 
-@team_color: pink;
+@team_color: #EAEBEA;
 
-h1 { color: @team_color;}
+h1, h2, h3, h4, p, a, i, span {
+  color: @team_color;
+  font-family: caviar_dreamsregular;
+}
 
+a, a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+  color: @team_color;
+}
 
 body, html {
   height: 100%;
@@ -17,12 +25,76 @@ body, html {
   overflow: hidden;
 }
 
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
 #bg {
   position: absolute;
   z-index: -1;
   top: 0;
   left: 0;
 }
-
 .bgwidth { width: 100%; }
 .bgheight { height: 100%; }
+
+#title {
+  position: absolute;
+  top: 46%;
+  left: 50%;
+  width: 440px;
+  height: 380px;
+  margin-top: -190px;
+  margin-left: -220px;
+  text-align: center;
+  img {
+    width: 225px;
+    height: 225px;
+  }
+  h2 {
+    letter-spacing: 11.5px;
+  }
+  h3 {
+    letter-spacing: 4.1px;
+    margin-top: 25px;
+    line-height: 30px;
+  }
+}
+
+#scroll {
+  bottom: 37px;
+  span {
+    letter-spacing: 4px;
+    font-size: 15.5px;
+  }
+  i {
+    font-size: 30px;
+    line-height: 8px;
+  }
+}
+
+.nav-bar {
+  box-sizing: border-box;
+  width: 100%;
+  height: 400px;
+  padding: 102px 86px 0 96px;
+  font-size: 21px;
+  letter-spacing: 8.4px;
+  background: rgba(0,0,0,1);
+  background: -webkit-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(255,255,255,0.01) 99%, rgba(255,255,255,0) 100%);
+  background: -o-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(255,255,255,0.01) 99%, rgba(255,255,255,0) 100%);
+  background: -ms-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(255,255,255,0.01) 99%, rgba(255,255,255,0) 100%);
+  background: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(255,255,255,0.01) 99%, rgba(255,255,255,0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#ffffff', GradientType=0 );
+  a {
+    display: block;
+    float: left;
+    width: 33.33%;
+    text-align: center;
+  }
+}
+
+

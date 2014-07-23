@@ -5,7 +5,8 @@ $(function() {
   });
 
 
-  function resizeBg() {
+  function resizeWindow() {
+   // background image aboslutely centered and full bleed
    var $bg = $("#bg"),
        aspectRatio = $bg.width() / $bg.height();
 
@@ -16,9 +17,18 @@ $(function() {
       $bg.removeClass().addClass('bgwidth');
       $bg.css({ marginLeft: 0 });
     }
+    centerElement();
   }
 
+  function centerElement() {
+    // centered class absolutely centered
+    var $centered = $(".centered");
+    $centered.css({
+      marginLeft: -($centered.width()/2),
+      marginTop:  -($centered.height()/2)
+    });
+    console.log('element centered');
+  }
 
-  $(window).resize(resizeBg).trigger("resize");
-
+  $(window).resize(resizeWindow);
 });
