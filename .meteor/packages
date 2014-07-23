@@ -8,3 +8,5 @@ autopublish
 insecure
 less
 jquery
+font-awesome-4-less
+normalize.css
