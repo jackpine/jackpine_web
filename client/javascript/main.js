@@ -1,9 +1,10 @@
 $(function() {
+  $(window).stellar();
+
   $('body').panelSnap({
     panelSelector: '.full_page',
     $menu: '.nav-bar',
   });
-
 
   function resizeWindow() {
    // background image aboslutely centered and full bleed
