@@ -26,6 +26,10 @@ a, a:link, a:visited, a:hover, a:active {
   color: @lighter_text;
 }
 
+li {
+  list-style: none;
+}
+
 body, html {
   height: 100%;
 }
@@ -135,7 +139,6 @@ body, html {
 #our_guild {
   .head-shots {
     li {
-      list-style: none;
       float: left;
       width: 281px;
       margin: 20px 30px;
@@ -148,5 +151,26 @@ body, html {
          border-radius: 141px;
        }
      }
+  }
+}
+
+#lets_chat {
+  #near-cone {
+    position: absolute;
+    z-index: -1;
+    bottom: 30px;
+    right: -200px;
+  }
+  #mid-cone {
+    position: absolute;
+    z-index: -2;
+    bottom: 30px;
+    left: -10px;
+  }
+  #far-cone {
+    position: absolute;
+    z-index: -3;
+    bottom: 45%;
+    left: 30%;
   }
 }
