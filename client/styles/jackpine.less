@@ -1,17 +1,29 @@
 // Import Font Awesome
 @import "/packages/font-awesome-4-less/font-awesome.import.less";
 @import "/fonts/caviar-dreams-fontfacekit/caviardreams_regular_macroman/stylesheet.css";
+@import "/fonts/caviar-dreams-fontfacekit/caviardreams_bold_macroman/stylesheet.css";
 
-@team_color: #EAEBEA;
+@lighter_text: #EAEBEA;
+@light_text: #EDEDED;
+@grey_text: #888888;
 
-h1, h2, h3, h4, p, a, i, span {
-  color: @team_color;
+h1 {
+  color: @light_text;
+  font-family: caviar_dreamsbold;
+  font-size: 5em;
+  letter-spacing: 0.5em;
+  text-shadow: 0px 4px 4px rgba(150, 150, 150, 1);
+  margin-bottom: 41px;
+}
+
+h2, h3, h4, a, i, span {
+  color: @lighter_text;
   font-family: caviar_dreamsregular;
 }
 
 a, a:link, a:visited, a:hover, a:active {
   text-decoration: none;
-  color: @team_color;
+  color: @lighter_text;
 }
 
 body, html {
@@ -24,6 +36,17 @@ body, html {
   position: relative;
   overflow: hidden;
   text-align: center;
+}
+
+.centered {
+  width: 75%;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
 }
 
 .footer {
@@ -94,5 +117,17 @@ body, html {
       font-size: 30px;
       line-height: 8px;
     }
+  }
+}
+
+#our_trade, #our_guild {
+  p {
+    color: @grey_text;
+    max-width: 1144px;
+    margin: 0 auto;
+    font-size: 2em;
+    font-family: serif;
+    letter-spacing: 0.025em;
+    line-height: 1.9em;
   }
 }
