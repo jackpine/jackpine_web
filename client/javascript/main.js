@@ -17,7 +17,6 @@ $(function() {
       $bg.removeClass().addClass('bgwidth');
       $bg.css({ marginLeft: 0 });
     }
-    centerElement();
   }
 
   function centerElement() {
@@ -31,4 +30,6 @@ $(function() {
   }
 
   $(window).resize(resizeWindow);
+
+  var s = skrollr.init();
 });
