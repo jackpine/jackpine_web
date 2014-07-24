@@ -1,6 +1,7 @@
 {
   "packages": {
     "font-awesome-4-less": {},
-    "normalize.css": {}
+    "normalize.css": {},
+    "skrollr-meteor": {}
   }
 }

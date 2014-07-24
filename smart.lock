@@ -3,7 +3,8 @@
   "dependencies": {
     "basePackages": {
       "font-awesome-4-less": {},
-      "normalize.css": {}
+      "normalize.css": {},
+      "skrollr-meteor": {}
     },
     "packages": {
       "font-awesome-4-less": {
@@ -15,6 +16,11 @@
         "git": "https://github.com/rithis/meteor-normalize.css",
         "tag": "v2.0.1",
         "commit": "671aba13223dd7d7ec1d26a6b2461943d7c4fa18"
+      },
+      "skrollr-meteor": {
+        "git": "https://github.com/Linskeyd/skrollr-meteor.git",
+        "tag": "v0.1.1",
+        "commit": "c931e769f8d124a5e716523e6bfd40e2e239c1c9"
       }
     }
   }
