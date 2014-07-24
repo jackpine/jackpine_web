@@ -31,5 +31,4 @@ $(function() {
 
   $(window).resize(resizeWindow);
 
-  var s = skrollr.init();
 });

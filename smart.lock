@@ -4,7 +4,7 @@
     "basePackages": {
       "font-awesome-4-less": {},
       "normalize.css": {},
-      "skrollr-meteor": {}
+      "stellar": {}
     },
     "packages": {
       "font-awesome-4-less": {
@@ -17,10 +17,10 @@
         "tag": "v2.0.1",
         "commit": "671aba13223dd7d7ec1d26a6b2461943d7c4fa18"
       },
-      "skrollr-meteor": {
-        "git": "https://github.com/Linskeyd/skrollr-meteor.git",
-        "tag": "v0.1.1",
-        "commit": "c931e769f8d124a5e716523e6bfd40e2e239c1c9"
+      "stellar": {
+        "git": "https://github.com/noorderstorm/meteor-stellar.git",
+        "tag": "v0.1.0",
+        "commit": "1ca2f68e0cca5967a6f88545cea12055c9fc2465"
       }
     }
   }
