@@ -8,16 +8,21 @@ $(function() {
 
   function resizeWindow() {
    // background image aboslutely centered and full bleed
-   var $bg = $("#bg"),
-       aspectRatio = $bg.width() / $bg.height();
+   var backgrounds = $(".bg"),
+       $window = $(window);
 
-    if ( ($(window).width() / $(window).height()) < aspectRatio ) {
-      $bg.removeClass().addClass('bgheight');
-      $bg.css({ marginLeft: -($bg.width()/2 - $(window).width()/2) });
-    } else {
-      $bg.removeClass().addClass('bgwidth');
-      $bg.css({ marginLeft: 0 });
-    }
+   backgrounds.each( function() {
+     var $bg = $(this);
+     aspectRatio = $bg.width() / $bg.height();
+
+      if ( ($window.width() / $window.height()) < aspectRatio ) {
+        $bg.removeClass('bgwidth').addClass('bgheight');
+        $bg.css({ marginLeft: -($bg.width()/2 - $(window).width()/2) });
+      } else {
+        $bg.removeClass('bgheight').addClass('bgwidth');
+        $bg.css({ marginLeft: 0 });
+      }
+   });
   }
 
   function centerElement() {
