@@ -49,14 +49,17 @@
 
   <div class="full_page" id="lets_chat" data-panel="lets_chat">
     <h1>LET'S CHAT</h1>
-    <input type="text" name="name" placeholder="What is your name?" />
-    <input type="text" name="email" placeholder="What is your email address?" />
-    <input type="text" name="digits" placeholder="What are your digits?" />
-    <input type="text" name="location" placeholder="What is your locale?" />
-    <input type="text" name="help" placeholder="How can Jackpine help you?" />
-    <input type="text" name="budget" placeholder="What is your budget?" />
-    <input type="text" name="word" placeholder="How did you hear about us?" />
-    <input type="submit" value="SUBMIT" />
+    <div class="form">
+      <span class="require"><input type="text" name="name" placeholder="What is your name?"/></span>
+      <span class="require"><input type="text" name="email" placeholder="What is your email address?" /></span>
+      <span class="require"><input type="text" name="digits" placeholder="What are your digits?" /></span>
+      <span class="require"><input type="text" name="location" placeholder="What is your locale?" /></span>
+      <span class="require"><input type="text" id="help" name="help" placeholder="How can Jackpine help you?" /></span>
+      <input type="text" name="budget" placeholder="What is your budget?" />
+      <input type="text" name="word" placeholder="How did you hear about us?" />
+      <input type="submit" value="SUBMIT" />
+    </div>
+
     <img id="near-cone" src="img/near_cone.png">
     <img id="mid-cone" src="img/mid_cone.png">
     <img data-stellar-ratio="2" data-stellar-vertical-offset="500"
