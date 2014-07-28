@@ -6,6 +6,8 @@ $(function() {
     $menu: '.nav-bar',
   });
 
+  $('.headshots li').tooltip();
+
   function resizeWindow() {
    // background image aboslutely centered and full bleed
    var backgrounds = $(".bg"),
